@@ -33,6 +33,7 @@ import mdx from "@astrojs/mdx";
 import path from "path";
 
 import svgr from "vite-plugin-svgr";
+import { rehypeFileTree } from "utils/markdown/file-tree/rehype-file-tree";
 
 export default defineConfig({
 	site: siteUrl,
@@ -122,6 +123,7 @@ export default defineConfig({
 					},
 				},
 			],
+			rehypeFileTree,
 			rehypeHeaderText,
 			/**
 			 * Insert custom HTML generation code here
