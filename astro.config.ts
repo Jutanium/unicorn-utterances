@@ -33,7 +33,7 @@ import mdx from "@astrojs/mdx";
 import path from "path";
 
 import svgr from "vite-plugin-svgr";
-import { rehypeFileTree } from "utils/markdown/file-tree/rehype-file-tree";
+import { rehypeFileTree } from "./src/utils/markdown/file-tree/rehype-file-tree";
 
 export default defineConfig({
 	site: siteUrl,
